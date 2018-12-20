@@ -30,7 +30,10 @@ First obtain the code by cloning the Git repository:
  
 ## kafka sink connect
    
-   set converter as kryo
- - com.mduhan.confluent.connect.kryo.converter.KryoConvertor   
+   set value converter as kryo in connector configuration
+ - com.mduhan.confluent.connect.kryo.converter.KryoConvertor
+ 
+##  Test cases
+	KryoTest
  
 
