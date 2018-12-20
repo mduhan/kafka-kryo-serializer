@@ -19,3 +19,18 @@ First obtain the code by cloning the Git repository:
 
 - cd kafka-kryo-serializer
 - mvn clean install
+
+## Serialize message on kafka producer
+   set serializer as kryo serializer
+  - props.put("value.serializer", KryoSerializer.class);
+  
+## Deserialize message on consumer
+   set serializer as kryo deserializer
+ - props.put("value.serializer", KryoDeserializer.class);
+ 
+## kafka sink connect
+   
+   set converter as kryo
+ - com.mduhan.confluent.connect.kryo.converter.KryoConvertor   
+ 
+
